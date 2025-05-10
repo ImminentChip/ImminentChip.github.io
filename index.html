@@ -2,67 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Wehrman | Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #0f0f0f;
-      color: #f0f0f0;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
     }
 
     header {
-      background-color: #1e1e1e;
-      padding: 2rem;
+      background-color: #161b22;
+      padding: 3rem 1rem;
       text-align: center;
-      border-bottom: 2px solid #444;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: #58a6ff;
     }
 
     header p {
-      font-size: 1.1rem;
-      color: #ccc;
+      font-size: 1.25rem;
+      color: #8b949e;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #21262d;
+      padding: 0.5rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     main {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     h2 {
-      border-bottom: 1px solid #555;
+      border-bottom: 2px solid #30363d;
       padding-bottom: 0.5rem;
-      color: #56ccf2;
+      color: #58a6ff;
     }
 
     ul {
-      list-style-type: square;
       padding-left: 1.5rem;
     }
 
     a {
-      color: #56ccf2;
-      text-decoration: none;
+      color: #58a6ff;
     }
 
     footer {
+      background-color: #161b22;
       text-align: center;
+      padding: 2rem 1rem;
+      color: #8b949e;
+    }
+
+    .project-card {
+      background-color: #21262d;
       padding: 1rem;
-      background-color: #1e1e1e;
-      color: #aaa;
-      border-top: 1px solid #444;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border: 1px solid #30363d;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #c9d1d9;
+    }
+
+    .project-card p {
+      color: #8b949e;
     }
   </style>
 </head>
@@ -70,37 +104,56 @@
 
   <header>
     <h1>Andrew Wehrman</h1>
-    <p>Aspiring Software Engineer | PC & Server Builder | IT & Tech Support</p>
+    <p>PC & Server Builder | Software Engineer (in progress) | IT Technician</p>
   </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="about">
       <h2>About Me</h2>
-      <p>I build custom PCs, servers, and technical systems from scratch. I'm an aspiring software engineer and IT technician currently building experience through hands-on projects and freelance work. I’m also starting school for computer science to deepen my skills in development, security, and networking.</p>
+      <p>I'm an aspiring software engineer and IT technician with hands-on experience building custom PCs, managing servers, setting up NAS systems, and solving real-world tech problems. I’m pursuing computer science and have already worked on several freelance and personal projects. I'm currently seeking remote entry-level opportunities in tech support, IT, or development.</p>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>Minecraft server infrastructure with automated backups and Dynmap</li>
-        <li>DNS sinkhole for ad-blocking and local network protection</li>
-        <li>TrueNAS-powered NAS system for multi-terabyte storage</li>
-        <li>Custom PC builds for gaming, mining, and productivity</li>
-      </ul>
+      <div class="project-card">
+        <h3>Minecraft Server Infrastructure</h3>
+        <p>Set up and maintained a Paper-based Minecraft server with Dynmap, automatic backups, and plugin management for a multi-user environment.</p>
+      </div>
+      <div class="project-card">
+        <h3>DNS Sinkhole</h3>
+        <p>Created a DNS sinkhole using Pi-hole and Ubuntu to block unwanted domains across a local network for ad-free and secure browsing.</p>
+      </div>
+      <div class="project-card">
+        <h3>TrueNAS Storage Server</h3>
+        <p>Configured and deployed a TrueNAS system for networked storage, backup automation, and remote access using older server hardware.</p>
+      </div>
+      <div class="project-card">
+        <h3>Custom PC Builds</h3>
+        <p>Designed and assembled custom desktop PCs for gaming, creative work, and general use, tailoring specs and performance to user needs.</p>
+      </div>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>Computer Repair & Custom Builds</li>
-        <li>Network Setup & Router Configuration</li>
-        <li>Linux (Ubuntu), Windows, and TrueNAS</li>
-        <li>Web Hosting, DNS, and Server Management</li>
-        <li>Python, Bash, and Batch Scripting</li>
+        <li>PC Building & Troubleshooting</li>
+        <li>Server Setup & Maintenance</li>
+        <li>DNS & Network Configuration</li>
+        <li>Linux (Ubuntu), Windows, TrueNAS</li>
+        <li>Basic Python, Bash, and scripting</li>
+        <li>Tech Support & Hardware Diagnostics</li>
+        <li>Customer Service & Communication</li>
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
       <p>GitHub: <a href="https://github.com/imminentchip" target="_blank">github.com/imminentchip</a></p>
@@ -108,7 +161,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Andrew Wehrman</p>
+    <p>&copy; 2025 Andrew Wehrman. Built with HTML & GitHub Pages.</p>
   </footer>
 
 </body>
