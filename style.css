@@ -98,6 +98,11 @@ footer {
   border-top: 1px solid #30363d;
 }
 
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+
 /* Responsive tweaks */
 @media (max-width: 600px) {
   body {
