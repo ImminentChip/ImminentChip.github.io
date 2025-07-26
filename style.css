@@ -131,6 +131,9 @@ footer {
 .center {
   text-align: center;
 }
+section {
+  scroll-margin-top: 100px;
+}
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
