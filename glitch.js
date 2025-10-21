@@ -1,5 +1,5 @@
 const overlay = document.getElementById('glitchOverlay') || (()=> {
-const el = document.createElement('div'); el.id='glitchOverlay'; document.body.appendChild(el); return el;
+  const el = document.createElement('div'); el.id='glitchOverlay'; document.body.appendChild(el); return el;
 })();
 const html = document.documentElement;
 const swup = new Swup({ containers: ['#swup'], animateHistoryBrowsing: true });
