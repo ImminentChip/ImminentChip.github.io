@@ -9,7 +9,8 @@
 </head>
 
 <body class="home-page">
-
+  <main id="swup" class="transition-fade" data-swup="container">
+    
   <header>
     <div class="center">
       <h1>Andrew Wehrman</h1>
@@ -80,5 +81,22 @@
   <footer>
     <p>&copy; 2025 Andrew Wehrman. Built with HTML & GitHub Pages.</p>
   </footer>
+
+    <div id="glitchOverlay" aria-hidden="true"></div>
+
+  <script src="https://unpkg.com/swup@4.0.0/dist/Swup.umd.js"></script>
+  <script src="./glitch.js" defer></script>
+
+  <svg width="0" height="0" style="position:absolute">
+    <filter id="glitchDisp">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" result="disp"/>
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="1.08"/>
+        <feFuncG type="linear" slope="1.08"/>
+        <feFuncB type="linear" slope="1.08"/>
+      </feComponentTransfer>
+    </filter>
+</svg>
 </body>
 </html>
