@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
   
-<body> 
+<body>
   <main id="swup" class="transition-fade" data-swup="container">
-    
+ 
   <header>
   <h1>NAS - Long term archival system</h1>
   <p><a href="index.html">&larr; Back to Portfolio</a></p>
@@ -54,23 +54,12 @@
     <li>Experiments in hosting self-contained local services (AI, websites, Minecraft servers)</li>
   </ul>
 
+  </main>
+
   <div id="glitchOverlay" aria-hidden="true"></div>
 
   <script src="https://unpkg.com/swup@4.0.0/dist/Swup.umd.js"></script>
   <script src="./glitch.js" defer></script>
 
-  <svg width="0" height="0" style="position:absolute">
-    <filter id="glitchDisp">
-      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0"
-                         xChannelSelector="R" yChannelSelector="G" result="disp"/>
-      <feComponentTransfer>
-        <feFuncR type="linear" slope="1.08"/>
-        <feFuncG type="linear" slope="1.08"/>
-        <feFuncB type="linear" slope="1.08"/>
-      </feComponentTransfer>
-    </filter>
-  </svg>
-  
 </body>
 </html>
