@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas List | Andrew Wehrman</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex">
+</head>
+
+<body>
+  <main id="swup" class="transition-fade" data-swup="container">
+    <h1>Christmas List</h1>
+    <p style="color:#8b949e; max-width: 70ch;">
+      A quick list of upgrades and stuff I’m working toward. Feel free to assist with whatever project you'd like.
+    </p>
+
+  <section class="list-section">
+    <h2>Preferred present</h2>
+    <ul>
+      <li>VISA Gift cards to assist with Sonoma</li>
+    </ul>
+  </section>
+
+  <section class="list-section">
+    <h2>Realm</h2>
+    <ul>
+      <li>Samsung 990 Pro NVME SSD (or equivalent)</li>
+      <li>Ryzen 7 5800X3D AM4</li>
+    </ul>
+  </section>
+
+  <section class="list-section">
+    <h2>Cube</h2>
+    <ul>
+      <li>Ryzen 9 5950X AM4</li>
+    </ul>
+  </section>
+
+  <section class="list-section">
+    <h2>NAS</h2>
+    <ul>
+      <li>12TB HDD 5200RPM (Company doesn't matter. WD, Seagate, Toshiba, ETC)</li>
+      <li>Rosewill 2U Server Chassis RSV-Z2850U OR RSV-H208 (Better scalability)</li>
+    </ul>
+  </section>
+
+  <section class="list-section">
+    <h2>MISC</h2>
+    <ul>
+      <li>Any Cpu's, Gpu's or other random computer hardware is welcome and will be used in some way by some project eventrully.</li>
+      <li>3D Printing filament (1.75mm creality Mat colors)</li>
+      <li>Air Fryer</li>
+      <li>Status Audio Between 3ANC headphones</li>
+    </ul>
+  </section>
+
+    <footer>
+      <p>&copy; 2025 Andrew Wehrman</p>
+    </footer>
+  </main>
+
+  <div id="glitchOverlay" aria-hidden="true"></div>
+
+  <script src="https://unpkg.com/swup@4.0.0/dist/Swup.umd.js"></script>
+  <script src="./glitch.js" defer></script>
+
+  <svg width="0" height="0" style="position:absolute">
+    <filter id="glitchDisp">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" result="disp"/>
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="1.08"/>
+        <feFuncG type="linear" slope="1.08"/>
+        <feFuncB type="linear" slope="1.08"/>
+      </feComponentTransfer>
+    </filter>
+  </svg>
+</body>
+</html>
